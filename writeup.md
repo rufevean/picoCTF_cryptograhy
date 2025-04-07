@@ -156,3 +156,70 @@ I used an online substitution cipher decoder for this one. I started with the de
 **Flag** : picoCTF{FR3QU3NCY_4774CK5_4R3_C001_7AA384BC
 
 ---
+### Name : credstuff
+
+#### Description :  We found a leak of a blackmarket website's login credentials. Can you find the password of the user cultiris and successfully decrypt it? Download the leak here. The first user in usernames.txt corresponds to the first password in passwords.txt. The second user corresponds to the second password, and so on .
+
+identify the password row corresponding to username row to find a cipher. I put that into a caesar cipher brute force tool (therese) to reveal the flag.
+
+**Flag** :  picoCTF{C7r1F_54V35_71M3}
+
+--- 
+
+### Name : rail-fence
+
+#### Description : A type of transposition cipher is the rail fence cipher, which is described here. Here is one such cipher encrypted using the rail fence with 4 rails. Can you decrypt it? Download the message here. Put the decoded message in the picoCTF flag format, picoCTF{decoded_message}.
+
+
+Rail fence cipher, use a decoder with 4 rows and keep the punctations and spaces to reveal the flag.
+
+**Flag** : picoCTF{WH3R3_D035_7H3_F3NC3_8361N_4ND_3ND_83F6D8D7}
+
+--- 
+
+### Name : Flags
+
+#### Description :  What do the flags mean?
+
+They are maritime signal flags where each flag represents a letter or number . search for the mappings online and align them to dicpher the flag.
+
+**Flag** : picoCTF{f1ag5and5tuff}
+
+--- 
+### Name : Mr-Worldwide
+
+#### Description : A musician left us a message. What's it mean?
+
+They resemble coordinates of multiple locations and they are , combinding the first letter of every coordinate reveals the flag.
+
+**Flag** : picoCTF{kodiak_alaska}
+
+--- 
+
+### Name : Tapping
+
+#### Description : Theres tapping coming in from the wires. What's it saying nc jupiter.challenges.picoctf.org 9422.
+
+The server returns a morse code string and using a morse code decoder reveals the flag. 
+
+**Flag** : picoCTF{m0rs3c0d31sfun2683824610}
+
+--- 
+
+### Name : ReadMyCert
+
+#### Description : How about we take you on an adventure on exploring certificate signing requests Take a look at this CSR file here.
+
+A CSR (Certificate Signing Request) is a specially formatted encrypted message sent from a Secure Sockets Layer (SSL) digital certificate applicant to a certificate authority (CA). The CSR validates the information the CA requires to issue a certificate. Use a csr file reader to reveal the flag in its content tab. 
+
+**Flag** : picoCTF{read_mycert_57f58832}
+
+--- 
+
+### Name : la cifra de
+
+#### Description :  I found this cipher in an old book. Can you figure out what it says? Connect with nc jupiter.challenges.picoctf.org 58295.
+
+its Vigenere Cipher, using a vigenere cipher decoder online will reveal the flag.
+
+**Flag** : picoCTF{b311a50_0r_v1gn3r3_c1ph3ra966878a}
