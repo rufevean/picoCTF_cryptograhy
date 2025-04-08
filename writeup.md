@@ -223,3 +223,63 @@ A CSR (Certificate Signing Request) is a specially formatted encrypted message s
 its Vigenere Cipher, using a vigenere cipher decoder online will reveal the flag.
 
 **Flag** : picoCTF{b311a50_0r_v1gn3r3_c1ph3ra966878a}
+
+--- 
+### Name : transposition-trial
+
+#### Description :  Our data got corrupted on the way here. Luckily, nothing got replaced, but every block of 3 got scrambled around! The first word seems to be three letters long, maybe you can use that to recover the rest of the message. Download the corrupted message here.
+
+
+With some intiution , we can say that the message is "The flag is picoCTF{...}" . Now, connect the first three letters of the message with the "the" and see in which order they are shuffled , do that shuffle for the rest of the message to get the flag. 
+
+**Flag** : picoCTF{7R4N P051N6_15_3XP3N51V3_109AB02E} 
+
+--- 
+
+### Name :  substitution2
+
+#### Description :  It seems that another encrypted message has been intercepted. The encryptor seems to have learned their lesson though and now there isn't any punctuation! Can you still crack the cipher? Download the message here.
+
+I used an online substitution cipher decoder for this one. I started with the default guesses and then changed the letter mappings using my intuition. I looked for common patterns and words to figure out the right letters. After a few tweaks, the message made sense and I got the flag.
+
+**Flag** : picoCTF{N6R4M_4N41Y515_15_73D10U5_702F03FC}
+
+--- 
+
+### Name : HideToSee
+
+#### Description :  How about some hide and seek heh? Look at this image here.
+
+We can see that the image has atbash cypher in it, the hint says to extract the image. so extracting the image using `steghide` gets a encrypted.txt file, using an atbash decipher tool for the text inside the file reveals the flag. 
+
+**Flag** : picoCTF{atbash_crack_7142fde9}
+
+--- 
+### Name : Dachshund Attacks
+
+#### Description : What if d is too small? Connect with nc mercury.picoctf.net 31133.
+
+Accessing the server using netcat gives the E value, the cipher and the N value. put them in a rsa cipher calculator and you get the flag.
+
+**Flag** : picoCTF{proving_wiener_1146084}
+
+--- 
+
+### Name : basic-mod2
+
+#### Description : A new modular challenge! Download the message here. Take each number mod 41 and find the modular inverse for the result. Then map to the following character set: 1-26 are the alphabet, 27-36 are the decimal digits, and 37 is an underscore. Wrap your decrypted message in the picoCTF flag format (i.e. picoCTF{decrypted_message})
+
+finding modular inverse of 41 for each number results in :
+
+` 28 14 22 30 18 32 30 12 25 37 8 31 18 4 37 35 1 27 32 4 36 30 36`
+
+Using a a1z26 cipher tool with custom alphabet supporting numbers and hyphen reveals the flag.
+
+**Flag** : picoCTF{1nv3r53ly_h4rd_8a05d939}
+
+--- 
+
+
+
+
+
