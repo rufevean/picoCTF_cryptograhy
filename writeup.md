@@ -279,7 +279,23 @@ Using a a1z26 cipher tool with custom alphabet supporting numbers and hyphen rev
 
 --- 
 
+### Name : john_pollard
+
+#### Description : Sometimes RSA certificates are breakable
+
+Analyzing the rsa cert using openssl gives a modulos. Inserting that modulos into a factoriser gives p and q.combine them to get the flag.
 
 
+**Flag** : picoCTF{73176001,67867967}
 
 
+--- 
+### Name : waves over lambda
+
+####  Description :  We made a lot of substitutions to encrypt this. Can you decrypt it? Connect with nc jupiter.challenges.picoctf.org 39894.
+
+`nc jupiter.challenges.picoctf.org 39894. | xsel --clipboard` to get the cipher in clipboard and use a substitution cipher solver to get the flag.its not in the usual format of picoCTF{**FLAG**} .
+
+
+**Flag** : frequency_is_c_over_lambda_agflcgtyue
+---
