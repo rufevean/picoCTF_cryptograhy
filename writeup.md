@@ -298,4 +298,35 @@ Analyzing the rsa cert using openssl gives a modulos. Inserting that modulos int
 
 
 **Flag** : frequency_is_c_over_lambda_agflcgtyue
+
+---
+
+### New Caesar
+
+#### Description : We found a brand new type of encryption, can you break the secret code? (Wrap with picoCTF{}) dcebcmebecamcmanaedbacdaanafagapdaaoabaaafdbapdpaaapadanandcafaadbdaapdpandcac 
+
+The message was encrypted by turning each character into two letters from 'a' to 'p' using a custom base16 system, then applying a Caesar cipher shift (mod 16) with a single-letter key. To decode it, we tried all 16 possible shifts, then turned each letter pair back into a character by converting them to numbers (0–15), combining them into a byte, and using chr() to get the original text.
+
+**Flag** : picoCTF{et_tu?_07d5c0892c1438d2b32600e83dc2b0e5}
+
+--- 
+
+### Name : morse-code
+
+#### Description : Morse code is well known. Can you decrypt this? Download the file here. Wrap your answer with picoCTF{}, put underscores in place of pauses, and use all lowercase.
+
+Upload the morse code file into a morse code decryper and you get the flag.
+
+**Flag** : picoCTF{WH47_H47H_90D_W20U9H7}
+
+--- 
+
+### Pixelated
+
+#### Description :  I have these 2 images, can you make a flag out of them? scrambled1.png scrambled2.png
+
+Doing a bitwise xor between the images and tuning the final image a bit reveals the flag. 
+
+**Flag** : picoCTF{1b867c3e}
+
 ---
