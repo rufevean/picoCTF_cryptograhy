@@ -321,12 +321,25 @@ Upload the morse code file into a morse code decryper and you get the flag.
 
 --- 
 
-### Pixelated
+### Name : Pixelated
 
 #### Description :  I have these 2 images, can you make a flag out of them? scrambled1.png scrambled2.png
 
 Doing a bitwise xor between the images and tuning the final image a bit reveals the flag. 
 
 **Flag** : picoCTF{1b867c3e}
+
+---
+
+--- 
+
+### Name :  spelling-quiz
+
+#### Description : I found the flag, but my brother wrote a program to encrypt all his text files. He has a spelling quiz study guide too, but I don't know if that helps.
+
+
+viewing the code tells us its just a substitution cipher, put the words and the encrypted flag in a auto substiution cipher solver and you get the flag.
+
+**Flag** : picoCTF{perhaps_the_dog_jumped_over_was_just _tired}
 
 ---
